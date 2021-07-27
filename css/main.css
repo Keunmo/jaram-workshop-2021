@@ -1,34 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-.title-container {
-  width: 100%;
-}
-
+/*0px~768px까지 공통으로 적용되는 부분*/
 .title {
+  padding: 1vw;
   text-align: center;
   color: white;
 }
-
+  
 .title > h1 {
-  font-size: 10rem;
+  font-size: 20vw;
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 200
+  font-weight: 300;
 }
 
 .title > p {
-  font-size: 1.2rem;
+  font-size: 3vw;
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 200
 }
-
-.main_filter {
-  background-color: rgba(0,0,0,0.5);
-  height: 100%;
-  width: 100%
+  
+.section1 {
+  margin: 4vh 4vh 4vh 4vh;
+  max-width: 1280px;
 }
 
+
+/*이 아래는 모든 해상도에 상관 없이 적용됨*/
 .main-expend-more {
   width: 5rem;
   margin: 0;
@@ -45,4 +44,120 @@
   padding: 0;
   color: white;
   font-size: 0.8rem;
+}
+
+.title-container {
+  width: 100%;
+}
+
+.main_filter {
+  background-image: linear-gradient(0deg, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+
+
+/*모바일 폰 가로*/
+@media screen and (max-width:320px) {
+  
+} 
+
+/*모바일 폰 세로&조금 큰 모바일폰 세로*/
+@media screen and (min-width:321px) and (max-width:480px) {
+  
+} 
+
+
+/*작은 테블릿 세로*/
+@media screen and (min-width:481px) and (max-width:600px) {
+  
+} 
+
+
+/*큰 테블릿 세로*/
+@media screen and (min-width:601px) and (max-width:768px) {
+  
+}
+
+/*조금 큰 테블릿 가로&작은 모니터*/
+@media screen and (min-width:769px) and (max-width:1024px) {
+  .title {
+    text-align: center;
+    color: white;
+  }
+
+  .title > h1 {
+    font-size: 8rem;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+  }
+
+  .title > p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 200
+  }
+  
+  .section1 {
+    margin: 40px 80px 80px 80px;
+    max-width: 1280px;
+  }
+}
+
+/*데스크탑*/
+@media screen and (min-width:1025px) and (max-width:1440px) {
+  .title {
+    text-align: center;
+    color: white;
+  }
+
+  .title > h1 {
+    font-size: 8rem;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+  }
+
+  .title > p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 200
+  }
+  
+  .section1 {
+    margin: 40px 80px 80px 80px;
+    max-width: 1280px;
+  }
+}
+
+/*큰 화면의 데스크탑*/
+@media screen and (min-width:1441px){
+  .section1 {
+    margin: 40px auto 80px auto;
+    max-width: 1280px;
+  }
+  
+  .title {
+    text-align: center;
+    color: white;
+  }
+
+  .title > h1 {
+    font-size: 8rem;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+  }
+
+  .title > p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 200
+  }
 }
