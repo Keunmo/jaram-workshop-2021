@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
     body, html {
       height: 100%;
@@ -16,6 +17,46 @@
     
     header {
       background-image: url("img/background.jpg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .slider-item1 {
+      background-image: url("img/test_image/image26.jpeg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .slider-item2 {
+      background-image: url("img/test_image/image25.jpeg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .slider-item3 {
+      background-image: url("img/test_image/image16.jpeg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .slider-item4 {
+      background-image: url("img/test_image/image14.jpeg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .slider-item5 {
+      background-image: url("img/test_image/image13.jpeg");
       height: 100%; 
       background-position: center;
       background-repeat: no-repeat;
@@ -49,13 +90,22 @@
 -->
 </section>
 <article  class="position-relative">
-  <section class="section1">
-    <nav>
-      <h1>자람은 기초부터 전문 능력까지 기를 수 있는 학회입니다.</h1>
-      <p>
-        대학교에 진학할때부터 관심분야를 정확히 정하고 오거나 잘하는 사람은 많지 않습니다.<br>자람은 세미나를 통해 다양한 분야를 접할 수 있도록 하여 관심분야를 정하는데 도움을 주고,<br>관심분야가 정해진 친구들은 스터디를 꾸려 그 분야를 더 깊게 공부할 수 있도록 체계가 이루어져 있습니다.<br>또한 매 학기 방학 워크샵을 개최해 한가지 주제에 대해 함께, 그리고 깊이 공부하며<br>프로그래밍 능력과 전공분야에 대한 소양을 기릅니다.
-      </p>
-    </nav>
+  <section class="">
+    <div class="section1-fullscreen-pictuers position-relative">
+      <div id="slider">
+        <div class="slider-item slider-item1"></div>
+        <div class="slider-item slider-item2"></div>
+        <div class="slider-item slider-item3"></div>
+        <div class="slider-item slider-item4"></div>
+        <div class="slider-item slider-item5"></div>
+      </div>
+      <div class="section1-img-text-container position-absolute top-50 start-50 translate-middle">
+        <h1>자람은 기초부터 전문 능력까지 기를 수 있는 학회입니다.</h1>
+        <p>
+          대학교에 진학할때부터 관심분야를 정확히 정하고 오거나 잘하는 사람은 많지 않습니다.<br>자람은 세미나를 통해 다양한 분야를 접할 수 있도록 하여 관심분야를 정하는데 도움을 주고,<br>관심분야가 정해진 친구들은 스터디를 꾸려 그 분야를 더 깊게 공부할 수 있도록 체계가 이루어져 있습니다.<br>또한 매 학기 방학 워크샵을 개최해 한가지 주제에 대해 함께, 그리고 깊이 공부하며<br>프로그래밍 능력과 전공분야에 대한 소양을 기릅니다.
+        </p>
+      </div>
+    </div>
   </section>
 </article>
 <!--
@@ -178,5 +228,10 @@
 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/sticky-scroll.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
