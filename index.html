@@ -4,18 +4,34 @@
   <title>Jaram</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    
+    header {
+      background-image: url("img/background.jpg");
+      height: 50%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <div class="overlay-dark"></div>
-  <div class="title-container">
+<header class="position-relative">
+  <div class="main_filter"></div>
+  <div class="title-container position-absolute top-50 start-50 translate-middle">
     <div class="title">
       <h1>JARAM</h1>
       <p>안녕하세요. 한양대학교 ERICA 캠퍼스 소프트웨어융합대학 전공학회 자람입니다.</p>
-      <a href="#introduce" class="ui inverted olive button push-top">더 알아보기</a>
     </div>
   </div>
-  <a href="#introduce"><img id="about-icon" src="img/icon/hello.svg"></a>
 </header>
 <section id="introduce" class="accent">
   <div class="ui container">
@@ -183,5 +199,7 @@
     </div>
   </div>
 </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
