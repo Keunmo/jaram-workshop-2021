@@ -5,18 +5,18 @@
 
 @keyframes arrowbounce{
   0% {
-    transform: translate(0,0);
+    transform: translate(0,-20%);
   }
   100% {
-    transform: translate(0,30%);
+    transform: translate(0,20%);
   }
 }
 
 @-webkit-keyframes arrowbounce{
   0% {
-    transform: translate(0,0);
+    transform: translate(0,-20%);
   }
   100% {
-    transform: translate(0,30%);
+    transform: translate(0,20%);
   }
 }
