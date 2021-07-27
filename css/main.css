@@ -1,10 +1,28 @@
+.title-container {
+  width: 100%;
+}
+
 .title {
   text-align: center;
   color: white;
+}
+
+.title > h1 {
+  font-size: 10rem;
+  margin: 0;
+}
+
+.title > p {
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .main_filter {
   background-color: rgba(0,0,0,0.5);
   height: 100%;
   width: 100%
+}
+
+.main-expend-more {
+  width: 5%;
 }
