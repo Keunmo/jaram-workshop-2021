@@ -1,45 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Jaram</title>
-  <link rel="stylesheet" href="css/intro.css"/>
-  <style>
-    header {
-      background: url("img/background.jpg") center;
-      background-size: cover;
-    }
-  </style>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
   <link rel="shortcut icon" href="img/jaram_.ico">
 
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
-  <script>
-    $(function () {
-    })
-  </script>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      font-size: 1rem;
+    }
+    
+    header {
+      background-image: url("img/background.jpg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .slider-item1 {
+      background-image: url("img/test_image/image26.jpeg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .slider-item2 {
+      background-image: url("img/test_image/image25.jpeg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .slider-item3 {
+      background-image: url("img/test_image/image16.jpeg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .slider-item4 {
+      background-image: url("img/test_image/image14.jpeg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .slider-item5 {
+      background-image: url("img/test_image/image13.jpeg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <div class="overlay-dark"></div>
-  <div class="title-container">
+<link rel="stylesheet" href="/css/animation.css">
+<header class="position-relative">
+  <div class="main_filter"></div>
+  <div class="title-container position-absolute top-50 start-50 translate-middle">
     <div class="title">
       <h1>JARAM</h1>
-      <p>안녕하세요. 한양대학교 ERICA 캠퍼스 소프트웨어융합대학 전공학회 자람입니다.</p>
-      <a href="#introduce" class="ui inverted olive button push-top">더 알아보기</a>
+      <p>한양대학교 ERICA 캠퍼스 소프트웨어융합대학 전공학회 자람입니다.</p>
     </div>
   </div>
-  <a href="#introduce"><img id="about-icon" src="img/icon/hello.svg"></a>
+  <div class="bottom-arrow-container position-absolute bottom-0 start-50 translate-middle-x">
+    <img src="img/icon/expand_more_white_24dp.svg" class="main-expend-more">
+  </div>
 </header>
 <section id="introduce" class="accent">
+<!--
   <div class="ui container">
     <h1>안녕하세요!</h1>
     <p>
@@ -47,9 +98,33 @@
       <br>
     </p>
   </div>
+-->
 </section>
+<article  class="position-relative">
+  <section class="">
+    <div class="section1-fullscreen-pictuers position-relative">
+      <div id="slider">
+        <div class="slider-item slider-item1"></div>
+        <div class="slider-item slider-item2"></div>
+        <div class="slider-item slider-item3"></div>
+        <div class="slider-item slider-item4"></div>
+        <div class="slider-item slider-item5"></div>
+      </div>
+      <div class="section1-img-text-container position-absolute top-50 start-50 translate-middle">
+        <h1 data-aos="fade-up" >자람은 기초부터 전문 능력까지 기를 수 있는 학회입니다.</h1>
+        <p data-aos="fade-up" >
+          대학교에 진학할때부터 관심분야를 정확히 정하고 오거나 잘하는 사람은 많지 않습니다.<br>
+          자람은 세미나를 통해 다양한 분야를 접할 수 있도록 하여 관심분야를 정하는데 도움을 주고,<br>
+          관심분야가 정해진 친구들은 스터디를 꾸려 그 분야를 더 깊게 공부할 수 있도록 체계가 이루어져 있습니다.<br>
+          또한 매 학기 방학 워크샵을 개최해 한가지 주제에 대해 함께, 그리고 깊이 공부하며<br>
+          프로그래밍 능력과 전공분야에 대한 소양을 기릅니다.
+        </p>
+      </div>
+    </div>
+  </section>
+</article>
 <section id="activity">
-  <h1>자람은 기초부터 전문 능력까지 기를 수 있는 학회입니다.</h1>
+  <!-- <h1>자람은 기초부터 전문 능력까지 기를 수 있는 학회입니다.</h1>
   <p>
     대학교에 진학할때부터 관심분야를 정확히 정하고 오거나 잘하는 사람은 많지 않습니다.
     <br>
@@ -60,8 +135,8 @@
     또한 매 학기 방학 워크샵을 개최해 한가지 주제에 대해 함께, 그리고 깊이 공부하며
     <br>
     프로그래밍 능력과 전공분야에 대한 소양을 기릅니다.
-  </p>
-  <div class="ui container three column stackable grid icon-group">
+  </p> -->
+  <div class="ui container four column stackable grid icon-group">
     <div class="column">
       <div class="main-icon">
         <img src="img/icon/science.svg">
@@ -73,22 +148,44 @@
         그룹별로 진행
       </p>
     </div>
+      <div class="column">
+        <div class="main-icon">
+          <img src="img/icon/learning.svg">
+        </div>
+        <h3>신입생 스터디</h3>
+        <p>
+          전담멘토의 과외 형식으로
+          <br>
+          기초 프로그래밍언어 스터디
+        </p>
+      </div>
     <div class="column">
       <div class="main-icon">
         <img src="img/icon/presentation.svg">
       </div>
       <h3>세미나</h3>
-      <p>주 1회 진행</p>
+      <p>
+        주 1회 관심분야 주제로
+        <br>
+        학회원들에게 발표
+      </p>
     </div>
     <div class="column">
       <div class="main-icon">
         <img src="img/icon/pacman.svg">
       </div>
       <h3>워크샵</h3>
-      <p>연중 2회 진행</p>
+      <p>
+        방학동안 모여 매년
+        <br>
+        새로운 주제로 
+        <br>
+        프로그램 개발
+      </p>
     </div>
   </div>
 </section>
+
 <section id="study-gallery" class="ui four column stackable grid gallery">
   <div class="column image full"
        style="background-image: url('img/test_image/image12.jpeg');">
@@ -128,7 +225,18 @@
     <br>
     자람 가족의 관계가 계속될 수 있도록 하고 있습니다
   </p>
-  <div class="ui container three column stackable grid push-top3">
+  <div class="ui container four column stackable grid push-top3">
+    <div class="column">
+      <div class="main-icon">
+        <img src="img/icon/presentation.svg">
+      </div>
+      <h3>선배님들의 특강</h3>
+      <p>
+        여러 현업에 나가신 선배님들께
+        <br>
+        현장의 이야기 듣는 시간 마련
+      </p>
+    </div>
     <div class="column">
       <div class="main-icon">
         <img src="img/icon/fireworks.svg">
@@ -202,8 +310,20 @@
       </div>
       <h3>학회방</h3>
       <p>한양대학교 ERICA캠퍼스 제3공학관 지하107호</p>
+      <a href="https://www.google.com/maps/search/%ED%95%9C%EC%96%91%EB%8C%80+%EC%97%90%EB%A6%AC%EC%B9%B4+3%EA%B3%B5%ED%95%99%EA%B4%80/@37.2986138,126.833179,17z/data=!3m1!4b1"> <img scr="img/test_image/IMG_campusmap.jpeg" width="50%" height="50%"/></a>
     </div>
   </div>
 </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/sticky-scroll.js"></script>
+<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+</script>
 </body>
 </html>

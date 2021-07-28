@@ -1,0 +1,28 @@
+.main-expend-more {
+  -webkit-animation: arrowbounce 2.5s ease-in-out infinite;
+  animation: arrowbounce 2.5s ease-in-out infinite;
+}
+
+@keyframes arrowbounce{
+  0% {
+    transform: translate(0,-20%);
+  }
+  50% {
+    transform: translate(0,20%);
+  }
+  100% {
+    transform: translate(0,-20%);
+  }
+}
+
+@-webkit-keyframes arrowbounce{
+  0% {
+    transform: translate(0,-20%);
+  }
+  50% {
+    transform: translate(0,20%);
+  }
+  100% {
+    transform: translate(0,-20%);
+  }
+}
