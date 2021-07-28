@@ -1,0 +1,29 @@
+h1, h2, img {margin-bottom:15px;}
+.accent {margin-bottom:30px;}
+
+p{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+h1, h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight : 900;
+}
+
+img{
+    object-fit: cover;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.carousel-bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    filter: brightness(50%); 
+}
